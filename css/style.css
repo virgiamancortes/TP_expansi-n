@@ -1,0 +1,264 @@
+*{ font-family: 'Poppins', sans-serif;} /** todos los elementos misma fuente**/
+
+/** diseño del título de la página**/
+body > header > div > h1{ 
+    
+    color: black;
+    font-size: 3.75em;
+    text-align: center;
+     
+    
+}
+/**Diseño del header**/
+header {
+    background-color: rgb(231, 8, 8);
+    margin-bottom: -40px;
+    border-color: rgb(231, 8, 8);
+    margin-top: 10px;
+    
+  
+}
+body > header > div{
+    background-color: rgb(231, 8, 8);
+    
+    animation-name: cambiarcolor; /**Aca aplicamos la animación**/
+    animation-duration: 2s;
+}
+
+/** Diseño del nav**/
+nav{
+    background-color: rgb(231, 8, 8);
+
+    
+}
+/** Diseño de los componentes "a" que se encuentran en el nav**/
+body > nav > a{
+    
+    color: white;
+    font-size: 1.25em;
+    transition-duration: 0.5s; 
+
+}
+/**Diseño de los íconos que se encuentran en el nav**/
+body > nav > i {
+    color: white;
+    
+
+}
+/**Diseño de los h2**/
+body > h2 {
+    font-size: 2.5em;
+    
+
+}
+/** Color del fondo del body**/
+body{
+    background-color: rgb(252, 241, 241);
+}
+/** primer pseudo class hover **/
+a:hover {
+    background-color: rgb(185, 5, 5);
+  }
+  /*Diseño del footer*/
+  footer{
+      background-color: rgb(27, 27, 27);
+  }
+  footer>p{
+      color: white;
+      
+  }
+  body > footer > a > i{
+      color: white;
+  }
+  span{
+      color: white;
+  }
+/** Diseño de los componentes de la tabla de la pag index **/
+  h3{
+    text-align: left;
+ }
+body > table > tbody > tr > th > p{
+    text-align: justify;
+ }
+ /** Animación**/
+ @keyframes cambiarcolor {
+    from {background-color: black;}
+    to {background-color: rgb(231, 8, 8);}
+  }
+/** MQ que usamos para index.html y circuitos.html**/
+
+
+/* Celulares */
+@media only screen and (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        align-content: start
+      }
+      .container:after {
+        display: block;
+        
+        margin: 10px;
+        flex: 999 999 auto;
+      }
+      .item {
+        flex: 0 0 auto;
+        margin: 10px;
+      }
+      header{
+          width:100%;
+      }
+      nav{
+          width: 100%;
+      }
+      footer{
+          width: 100%;
+      }
+      img{
+        width: 100%;
+        height: auto;
+    }
+   
+.grid_container-1 {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   box-sizing: border-box;
+   padding: 10px;
+ }
+ .grid_item-1 {
+   box-sizing: border-box;
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+ }
+ 
+ .grid_container-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-content: center
+  }
+  .grid_container-3:after {
+    display: block;
+    content: " placeholder ";
+    margin: 10px;
+    flex: 999 999 auto;
+  }
+ .grid_item-3 {
+        flex: 0 0 auto;
+        margin: 10px;
+      }
+     
+    
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: start;
+        
+        
+      }
+      .container:after {
+        display: block;
+        
+        margin: 12px;
+        flex: 999 999 auto;
+      }
+      .item {
+        flex: 0 0 auto;
+        margin: 12px;
+      }
+      header{
+        width:100%;
+    }
+    nav{
+        width: 100%;
+    }
+    #circuito{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     #circuito{ 
+        width: 474px; 
+        height: 283px;
+     }
+     .grid_container-1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      .grid_item-1 {
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+      
+      .grid_container-3 {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      .grid_item-3 {
+        
+        box-sizing: border-box;
+        font-size: 20px;
+        text-align: center;
+      }
+}
+/*Grid para equipos.html*/
+
+/***
+.grid_container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .grid_item-1 {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid_container-2 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .grid_item-2 {
+    
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+  }
+  .grid_container-3 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .grid_item-3 {
+    
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+  }

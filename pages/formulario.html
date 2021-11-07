@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="STYLESHEET" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Fórmula 1234</title>
+    <script src="https://kit.fontawesome.com/5d46542168.js" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Fórmula 1234
+            </h1>
+        </div>
+    </header>
+    <nav><i class="fas fa-angle-double-right"></i><a href="equipos.html">Equipos</a>
+        <i class="fas fa-angle-double-right"></i><a href="circuitos.html">Circuitos</a>
+        <i class="fas fa-angle-double-right"></i><a href="formulario.html">Suscribirse</a>
+        <i class="fas fa-angle-double-right"></i><a href="../index.html">Inicio</a>
+    </nav>
+    <h2>Suscribirse</h2>
+    <p>Suscribite a nuestro newsteller y recibi toda la información en tu mail</p>
+    <main>
+        <div class="container">
+            <div class="item">
+                <form id="formulario" name="formulario" onsubmit="return validacion()" method="post">
+                    <label for="nombre">Nombre: </label><input size="30" type="text" name="nombre">
+                    <br>
+                    <label for="apellido">Apellido:</label><input size="30" type="text" name="apellido">
+                    <br>
+                    <label for="fecha">Fecha de nacimiento:</label><input type="date" name="fecha">
+                    <br>
+                    <label for="email">Email:</label><input type="email" name="email">
+                    <br>
+                    <p>Seleccione su equipo favorito</p>
+                    <select name="equipo favorito">
+                        <p>marca</p>
+                        <option>FERRARE</option>
+                        <option>MERCHEDHES</option>
+                        <option>PINK BULL</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" name="Terminos"> Acepto los terminos y condiciones
+                    <br>
+
+                    <input type="submit" value="enviar"><i class="far fa-paper-plane"></i>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <span>Seguinos en youtube </span><a href="https://www.youtube.com/" target="__blank"><i
+                class="fab fa-youtube"></i></a>
+        <p>Diseñado por Virginia Aman Cortés</p>
+    </footer>
+
+
+</body>
+
+</html>
